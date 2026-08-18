@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collections | Sri Mangalam Jewellery, Coimbatore</title>
+<meta name="description" content="Explore gold necklaces, temple jewellery, bangles, earrings, bridal sets, silver pooja articles and more. Enquire on WhatsApp.">
+<meta name="theme-color" content="#0B0705">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Collections | Sri Mangalam Jewellery, Coimbatore">
+<meta property="og:description" content="Explore gold necklaces, temple jewellery, bangles, earrings, bridal sets, silver pooja articles and more. Enquire on WhatsApp.">
+<meta property="og:image" content="images/shopfront.png">
+<meta property="og:locale" content="en_IN">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@1,400&family=Manrope:wght@400;600&family=Noto+Serif+Tamil:wght@400&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #0B0705; }
+  @keyframes smRise { from { opacity: 0; transform: translate3d(0, 26px, 0); } to { opacity: 1; transform: none; } }
+  @keyframes smFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes smSheen { 0% { transform: translateX(-120%); } 60%, 100% { transform: translateX(220%); } } 50% { opacity: .9; } } }
+</style>
+</helmet>
+<div style="position:relative;background:linear-gradient(180deg,#0B0705 0%,#150E0A 24%,#0F0A07 55%,#1A110C 82%,#0B0705 100%);min-height:100vh;overflow-x:clip">
+  <div style="position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='132' height='132' viewBox='0 0 132 132'%3E%3Cg fill='none' stroke='%23E9C77C' stroke-opacity='.10'%3E%3Cpath d='M66 10c15 0 27 12 27 27v85H39V37c0-15 12-27 27-27z'/%3E%3Ccircle cx='66' cy='37' r='7'/%3E%3Cpath d='M0 122h132'/%3E%3C/g%3E%3C/svg%3E&quot;),radial-gradient(rgba(233,199,124,.07) 1px,transparent 1px);background-size:132px 132px,24px 24px"></div>
+  <div style="position:fixed;top:0;left:-18%;width:60vw;height:60vw;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(201,162,39,.15),transparent 66%)"></div>
+  <div style="position:relative;z-index:1">
+    <dc-import name="SiteHeader" active="Shop" style="position:sticky;top:0;z-index:800" hint-size="100%,150px"></dc-import>
+
+    <section style="max-width:1400px;margin:0 auto;padding:clamp(36px,7vw,80px) clamp(18px,5vw,40px) clamp(20px,4vw,36px)">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;animation:smFade 900ms ease both">
+        <span style="width:clamp(26px,6vw,44px);height:1px;background:linear-gradient(90deg,transparent,#E4C67F)"></span>
+        <span style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:rgba(233,199,124,.85)">The catalogue</span>
+      </div>
+      <h1 style="margin:0;max-width:22ch;font-family:Marcellus,serif;font-weight:400;font-size:clamp(34px,9vw,62px);line-height:1.06;animation:smRise 1000ms cubic-bezier(.22,.61,.36,1) both">
+        <span style="display:block;background:linear-gradient(112deg,#B08C3C,#E4C67F 22%,#FFF6DC 40%,#D9B463 60%,#A87F32 84%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent">Explore the designs</span>
+      </h1>
+      <p style="margin:22px 0 0;max-width:54ch;font-size:clamp(14.5px,3.4vw,16.5px);line-height:1.86;color:rgba(245,237,225,.7);text-wrap:pretty;animation:smRise 1000ms cubic-bezier(.22,.61,.36,1) both;animation-delay:140ms">Pieces from our counters, grouped the way the trays are. Tap <em style="font-style:normal;color:#E8D3A2">Enquire now</em> on anything and it opens WhatsApp with the item and its code already written — we will reply with today's rate, weight and availability.</p>
+    </section>
+
+    <section style="position:sticky;top:{{ chipTop }};z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:linear-gradient(180deg,rgba(11,7,5,.92),rgba(20,13,9,.72));border-top:1px solid rgba(233,199,124,.12);border-bottom:1px solid rgba(233,199,124,.14)">
+      <div style="max-width:1400px;margin:0 auto;padding:12px clamp(14px,4vw,40px)">
+        <div style="display:flex;gap:10px;overflow-x:auto;padding:4px 2px;scrollbar-width:none">
+          <sc-for list="{{ chips }}" as="chip" hint-placeholder-count="6">
+            <button type="button" onClick="{{ chip.onSelect }}" style="flex:none;min-height:44px;padding:0 18px;font-family:Manrope,sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;cursor:pointer;color:{{ chip.color }};border:1px solid {{ chip.border }};background:{{ chip.bg }};transition:transform 300ms cubic-bezier(.22,.61,.36,1),border-color 300ms ease,color 300ms ease" style-hover="transform:translateY(-2px);border-color:rgba(233,199,124,.7)" style-active="transform:translateY(0) scale(.98)">{{ chip.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:1400px;margin:0 auto;padding:clamp(22px,4vw,40px) clamp(18px,5vw,40px) clamp(30px,6vw,60px)">
+      <div style="display:flex;flex-wrap:wrap;gap:10px 20px;align-items:baseline;justify-content:space-between;margin-bottom:clamp(18px,3vw,28px)">
+        <h2 style="margin:0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(20px,4.6vw,28px);color:rgba(245,237,225,.94)">{{ headingText }}</h2>
+        <span style="font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,237,225,.5)">{{ countText }}</span>
+      </div>
+      <div style="display:grid;gap:clamp(14px,2.4vw,24px);grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))">
+        <sc-for list="{{ shown }}" as="it" hint-placeholder-count="8">
+          <article style="display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(233,199,124,.18);background:linear-gradient(168deg,rgba(255,240,210,.07),rgba(255,255,255,.015) 44%,rgba(0,0,0,.34));transition:transform 440ms cubic-bezier(.22,.61,.36,1),border-color 440ms ease,box-shadow 440ms ease" style-hover="transform:translateY(-6px);border-color:rgba(233,199,124,.5);box-shadow:0 28px 54px -28px rgba(0,0,0,.95)">
+            <div style="position:relative;overflow:hidden;aspect-ratio:1/1;background:linear-gradient(150deg,#1B120D,#0E0907)">
+              <sc-if value="{{ it.hasImg }}" hint-placeholder-val="{{ true }}">
+                <img loading="lazy" decoding="async" src="{{ it.img }}" alt="{{ it.name }}" style="width:100%;height:100%;object-fit:cover;filter:saturate(108%) contrast(103%)" />
+              </sc-if>
+              <sc-if value="{{ it.motif }}">
+                <div style="position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(150deg,rgba(122,90,42,.4),rgba(20,13,9,.85) 60%,rgba(90,15,23,.3))">
+                  <div style="position:absolute;inset:0;opacity:.5;background-image:radial-gradient(rgba(233,199,124,.14) 1px,transparent 1px);background-size:18px 18px"></div>
+                  <div style="position:absolute;width:58%;aspect-ratio:1;border:1px solid rgba(233,199,124,.2);transform:rotate(45deg)"></div>
+                  <div style="position:absolute;width:40%;aspect-ratio:1;border:1px solid rgba(233,199,124,.12);transform:rotate(45deg)"></div>
+                  <div style="width:16%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 30%,rgba(255,246,220,.6),rgba(201,162,39,.3) 55%,transparent 78%)"></div>
+                  <span style="position:absolute;bottom:16px;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:rgba(233,199,124,.65)">Photo on request</span>
+                </div>
+              </sc-if>
+              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(11,7,5,.6))"></div>
+              <span style="position:absolute;top:12px;left:12px;padding:6px 10px;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#241812;font-weight:600;background:linear-gradient(118deg,#D9B463,#FFF6DC 46%,#C39A45)">{{ it.metal }}</span>
+            </div>
+            <div style="display:flex;flex-direction:column;flex:1;padding:clamp(16px,3vw,20px)">
+              <span style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(233,199,124,.72)">{{ it.group }}</span>
+              <h3 style="margin:10px 0 0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(17px,3.6vw,19.5px);line-height:1.3;color:#F5EDE1">{{ it.name }}</h3>
+              <p style="margin:9px 0 0;font-size:13px;line-height:1.72;color:rgba(245,237,225,.6)">{{ it.note }}</p>
+              <div style="display:flex;align-items:center;gap:8px;margin:16px 0 14px">
+                <span style="font-family:Marcellus,serif;font-size:11.5px;letter-spacing:.18em;color:rgba(245,237,225,.5)">{{ it.code }}</span>
+                <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(233,199,124,.35),transparent)"></span>
+              </div>
+              <a href="{{ it.wa }}" target="_blank" rel="noopener" style="position:relative;overflow:hidden;margin-top:auto;display:flex;align-items:center;justify-content:center;min-height:48px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#241812;background:linear-gradient(118deg,#8A6524,#E4C67F 24%,#FFF6DC 44%,#D9B463 66%,#9A7328);box-shadow:0 12px 28px -16px rgba(201,162,39,.9);transition:transform 320ms cubic-bezier(.22,.61,.36,1),box-shadow 320ms ease" style-hover="transform:translateY(-2px);box-shadow:0 18px 34px -16px rgba(201,162,39,1)" style-active="transform:translateY(0) scale(.985)">
+                <span style="position:relative;z-index:2">Enquire now</span>
+              </a>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width:1400px;margin:0 auto;padding:0 clamp(18px,5vw,40px) clamp(40px,7vw,80px)">
+      <div style="position:relative;overflow:hidden;padding:clamp(24px,5vw,52px);border:1px solid rgba(233,199,124,.24);background:linear-gradient(135deg,rgba(122,90,42,.32),rgba(20,13,9,.74) 46%,rgba(90,15,23,.3))">
+        <div style="position:absolute;inset:0;opacity:.45;background-image:radial-gradient(rgba(233,199,124,.12) 1px,transparent 1px);background-size:22px 22px"></div>
+        <div style="position:relative;display:grid;gap:clamp(20px,4vw,40px);grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));align-items:center">
+          <div>
+            <h2 style="margin:0;font-family:Marcellus,serif;font-weight:400;font-size:clamp(23px,5.6vw,36px);line-height:1.18;color:#FFF6DC">Not seeing the design you had in mind?</h2>
+            <p style="margin:14px 0 0;max-width:46ch;font-size:14.8px;line-height:1.84;color:rgba(245,237,225,.72)">Designs and stock change through the week, and much of what we sell is made to order. Send a photo — even a screenshot — and we will tell you if it can be made, in what weight, and by when.</p>
+          </div>
+          <a href="https://wa.me/919677703232?text=Hello%20Sri%20Mangalam%20Jewellery%2C%20I%20am%20looking%20for%20a%20design%20that%20is%20not%20in%20the%20catalogue.%20Sending%20a%20photo." target="_blank" rel="noopener" style="position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:58px;max-width:340px;width:100%;justify-self:end;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#241812;background:linear-gradient(118deg,#8A6524,#E4C67F 24%,#FFF6DC 44%,#D9B463 66%,#9A7328);box-shadow:0 18px 40px -20px rgba(201,162,39,.95);transition:transform 340ms cubic-bezier(.22,.61,.36,1)" style-hover="transform:translateY(-3px)" style-active="transform:translateY(-1px) scale(.985)">
+            <span style="position:relative;z-index:2">Send a design on WhatsApp</span>
+            <span style="position:absolute;top:0;bottom:0;width:34%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.72),transparent);animation:smSheen 5.6s ease-in-out infinite"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <dc-import name="SiteFooter" hint-size="100%,420px"></dc-import>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { filter: 'All', headH: 79 };
+
+  componentDidMount() {
+    let ticking = false;
+    this.measure = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const h = document.querySelector('header');
+        if (h) {
+          const px = Math.round(h.getBoundingClientRect().height);
+          if (px && px !== this.state.headH) this.setState({ headH: px });
+        }
+        ticking = false;
+      });
+    };
+    this.measure();
+    window.addEventListener('scroll', this.measure, { passive: true });
+    window.addEventListener('resize', this.measure);
+    const attach = () => {
+      const h = document.querySelector('header');
+      if (!h) return setTimeout(attach, 120);
+      this.ro = new ResizeObserver(this.measure);
+      this.ro.observe(h);
+      this.measure();
+    };
+    attach();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.measure);
+    window.removeEventListener('resize', this.measure);
+    if (this.ro) this.ro.disconnect();
+  }
+
+  items() {
+    return [
+      { code: 'SM-NK-101', name: 'Pearl-drop attigai', group: 'Gold necklaces & harams', metal: '22K Gold', note: 'Close-neck attigai with pearl strings and matching side pieces.', img: 'images/necklace-pearl.png' },
+      { code: 'SM-NK-104', name: 'Filigree flower malai', group: 'Gold necklaces & harams', metal: '22K Gold', note: 'Openwork flowers graduating to a single drop at the centre.', img: 'images/necklace-filigree.png' },
+      { code: 'SM-NK-108', name: 'Stone malai with jhumkas', group: 'Gold necklaces & harams', metal: '22K Gold', note: 'Light stone-set malai sold with matching jhumkas.', img: 'images/necklace-jhumka.png' },
+      { code: 'SM-NK-112', name: 'Flower pendant set', group: 'Gold necklaces & harams', metal: '22K Gold', note: 'Pearl-and-stone flower pendant on a patterned chain.', img: 'images/necklace-flower.png' },
+      { code: 'SM-NK-118', name: 'Everyday chain selection', group: 'Gold necklaces & harams', metal: '22K Gold', note: 'Daily-wear chains in several link patterns and lengths.', img: 'images/necklace-wall.png' },
+      { code: 'SM-TM-201', name: 'Lakshmi kasu haram, double', group: 'Temple / antique jewellery', metal: 'Antique Gold', note: 'Two-layer kasu malai with Lakshmi coins and nakshi finish.', img: 'images/temple-harams.png' },
+      { code: 'SM-TM-206', name: 'Nakshi bridal haram', group: 'Temple / antique jewellery', metal: 'Antique Gold', note: 'Full-length temple haram with a heavy centre pendant.', img: 'images/temple-harams.png' },
+      { code: 'SM-BG-301', name: 'Cut-work bangles, pair', group: 'Bangles & kada', metal: '22K Gold', note: 'Pierced cut-work band, light on the wrist for its size.', img: 'images/bangles-tray.png' },
+      { code: 'SM-BG-305', name: 'Enamel bangles, pair', group: 'Bangles & kada', metal: '22K Gold', note: 'Coloured enamel detailing over a broad polished band.', img: 'images/bangles-spread.png' },
+      { code: 'SM-BG-309', name: 'Slim daily bangles, set of four', group: 'Bangles & kada', metal: '22K Gold', note: 'Thin bangles meant to be worn together every day.', img: 'images/bangles-tray.png' },
+      { code: 'SM-ER-401', name: 'Temple jhumkas', group: 'Earrings & jhumkas', metal: 'Antique Gold', note: 'Classic bell jhumka with granulated dome and hanging bead row.', img: 'images/earrings-wall.png' },
+      { code: 'SM-ER-405', name: 'Stone stud drops', group: 'Earrings & jhumkas', metal: '22K Gold', note: 'Small stud with a detachable drop for functions.', img: 'images/earrings-wall.png' },
+      { code: 'SM-RG-501', name: 'Stone flower ring', group: 'Rings', metal: '22K Gold', note: 'Ruby and emerald flower head on a slim shank.', img: 'images/rings.png' },
+      { code: 'SM-RG-504', name: 'Metti, pair', group: 'Rings', metal: 'Silver', note: 'Traditional toe rings, adjustable, in oxidised silver.', img: 'images/rings.png' },
+      { code: 'SM-BR-601', name: 'Complete bridal set', group: 'Bridal sets', metal: '22K Gold', note: 'Attigai, long haram, jhumkas and bangles planned as one set.', img: 'images/bridal-set.png' },
+      { code: 'SM-BR-604', name: 'Reception set', group: 'Bridal sets', metal: '22K Gold', note: 'Lighter malai and earrings for the second-day function.', img: 'images/necklace-jhumka.png' },
+      { code: 'SM-SP-701', name: 'Kuthuvilakku, pair', group: 'Silver pooja articles', metal: 'Silver', note: 'Standing lamps with a lotus base, for the pooja room.', img: 'images/silver-pooja.png' },
+      { code: 'SM-SP-705', name: 'Kumkum box & plate set', group: 'Silver pooja articles', metal: 'Silver', note: 'Engraved plate with kumkum holder and small tumblers.', img: 'images/silver-pooja.png' },
+      { code: 'SM-SG-801', name: 'Silver gift articles', group: 'Silver gift articles', metal: 'Silver', note: 'Bowls, tumblers and trays kept ready for house functions.', img: 'images/silver-articles.png' },
+      { code: 'SM-SG-804', name: 'Baby gift set', group: 'Silver gift articles', metal: 'Silver', note: 'Small tumbler, spoon and bowl — the usual naming-day gift.', img: 'images/silver-articles.png' },
+      { code: 'SM-CR-901', name: 'Crystal showpieces', group: 'Crystal & glassware', metal: 'Crystal', note: 'Cut-glass pieces for shelves and mantel displays.', img: 'images/crystal-cabinet.png' },
+      { code: 'SM-CR-905', name: 'Glass gift sets', group: 'Crystal & glassware', metal: 'Glassware', note: 'Boxed glassware sets for weddings and housewarmings.', img: 'images/crystal-cabinet.png' },
+      { code: 'SM-DM-1001', name: 'Diamond pendant', group: 'Diamond jewellery', metal: 'Diamond', note: 'Certified stones set in white or yellow gold, made to order.', motifOnly: true },
+      { code: 'SM-DM-1004', name: 'Diamond studs', group: 'Diamond jewellery', metal: 'Diamond', note: 'Everyday studs; we quote by stone size and clarity.', motifOnly: true },
+      { code: 'SM-KD-1101', name: "Baby bangles, pair", group: "Kids' jewellery", metal: '22K Gold', note: 'Soft-edged bangles sized for a first birthday.', motifOnly: true },
+      { code: 'SM-KD-1104', name: "Kids' chain with pendant", group: "Kids' jewellery", metal: '22K Gold', note: 'Short chain with a light pendant, safe clasp.', motifOnly: true }
+    ];
+  }
+
+  renderVals() {
+    const all = this.items();
+    const groups = ['All', 'Gold necklaces & harams', 'Temple / antique jewellery', 'Bangles & kada', 'Earrings & jhumkas', 'Rings', 'Bridal sets', 'Silver pooja articles', 'Silver gift articles', 'Crystal & glassware', 'Diamond jewellery', "Kids' jewellery"];
+    const filter = this.state.filter;
+    const shown = filter === 'All' ? all : all.filter(i => i.group === filter);
+    return {
+      chipTop: this.state.headH + 'px',
+      headingText: filter === 'All' ? 'All pieces' : filter,
+      countText: shown.length + (shown.length === 1 ? ' piece' : ' pieces'),
+      chips: groups.map(g => ({
+        label: g === 'All' ? 'Everything' : g,
+        color: g === filter ? '#241812' : 'rgba(245,237,225,.72)',
+        border: g === filter ? 'transparent' : 'rgba(233,199,124,.3)',
+        bg: g === filter ? 'linear-gradient(118deg,#D9B463,#FFF6DC 46%,#C39A45)' : 'linear-gradient(150deg,rgba(233,199,124,.1),rgba(11,7,5,.3))',
+        onSelect: () => this.setState({ filter: g })
+      })),
+      shown: shown.map(i => ({
+        ...i,
+        hasImg: !i.motifOnly,
+        motif: !!i.motifOnly,
+        wa: 'https://wa.me/919677703232?text=' + encodeURIComponent('Hello Sri Mangalam Jewellery, I would like to enquire about ' + i.name + ' (Code: ' + i.code + ').')
+      }))
+    };
+  }
+}
+
+</script>
+</body>
+</html>
